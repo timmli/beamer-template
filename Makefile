@@ -8,6 +8,7 @@ BEAMER_FILES =  myMacros.tex \
 	$(wildcard graphics/*.pdf) 
 
 test_beamer:
+	rm -fr test
 	mkdir test
 	cd test; mkdir beamer-template
 	cp -r --parents $(BEAMER_FILES) test/beamer-template
@@ -20,6 +21,7 @@ test_beamer:
 			latexmk -pdf beamer-template.tex
 
 release_beamer:
+	rm -fr temp
 	mkdir temp
 	cd temp; mkdir beamer-template
 	cp -r --parents $(BEAMER_FILES) temp/beamer-template
