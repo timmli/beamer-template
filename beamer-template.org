@@ -36,7 +36,8 @@
 % \renewcommand{\bsp}[1]{{\color{HHUblue}\itshape\bfseries #1}} % already defined in myMacros.tex
 \renewcommand{\bsp}[1]{{\usebeamercolor[bg!80]{block title example}\itshape\bfseries #1}}
 \newcommand{\term}[1]{{\color{UTblue}\scshape\bfseries #1}} 
-\newcommand{\bspcolor}[1]{{\color{UTlightgreen}\bfseries #1}}
+%\newcommand{\bspcolor}[1]{{\color{UTlightgreen}\bfseries #1}}
+\newcommand{\bspcolor}[1]{{\usebeamercolor[bg!80]{block title example}\bfseries #1}}
 
 \AtBeginSection[]
 {
