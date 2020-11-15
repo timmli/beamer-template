@@ -6,6 +6,10 @@ LaTeX template for Beamer slides
 
 ### Theme "Bielefeld"
 
-![](graphics/Bielefeld-title.svg)
+<kbd>
+<img src="graphics/Bielefeld-title.svg" />
+</kbd>
 
-![](graphics/Bielefeld-blocks.svg)
+<kbd>
+<img src="graphics/Bielefeld-blocks.svg" />
+</kbd>
