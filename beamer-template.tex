@@ -26,7 +26,7 @@
 % \input{beamerlogosDuesseldorf.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%% 
-% CUSTOM MACROS     %
+% CUSTOM MACROS        %
 %%%%%%%%%%%%%%%%%%%%%%%% 
 
 \input{beamer-template/myMacros}
@@ -38,48 +38,50 @@
 \newcommand{\term}[1]{{\color{UTblue}\scshape\bfseries #1}} 
 \newcommand{\bspcolor}[1]{{\color{UTlightgreen}\bfseries #1}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HEADER
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Beamer Template}
 \subtitle{Subtitle}	
 \author{Max Mustermann}
 \institute[Inst.]{Institute/Affiliation}
 \date{\today}
-% \logo{\pgfimage[width=2cm,height=1cm]{logo-emmy}}			% Logo on all slides (pdf,png,jpg,eps)
-% \titlegraphic{\includegraphics[height=1cm]{path/to/picture}}	% on title slide
+%\logo{\pgfimage[width=2cm,height=1cm]{logo-emmy}}			% Logo on all slides (pdf,png,jpg,eps)
+%\titlegraphic{\includegraphics[height=1cm]{path/to/picture}}	% on title slide
+\RequirePackage{lipsum}
+\titlegraphic{{\rmfamily \lipsum}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SLIDES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \maketitle
 
 % \begin{frame}[plain]
-% \titlepage
+%   \titlepage
 % \end{frame}
 
-% \frame{\titlepage}
+%\frame{\titlepage}
 
-% \frame{
-% \frametitle{Table of contents}
-% \tableofcontents
-% [pausesections]
-% }
+%\frame{
+%\frametitle{Table of contents}
+%  \tableofcontents
+%  [pausesections]
+%}
 
-%   \AtBeginSection[]
-%   {
-%   \begin{frame}{Outline}
-%   \tableofcontents[
-%   currentsection
-%   ]
-%   \end{frame}
-% }
+%\AtBeginSection[]
+%{
+%  \begin{frame}{Outline}
+%    \tableofcontents[
+%    currentsection
+%    ]
+%  \end{frame}
+%}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{beamer-template/beamer-examples.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}[plain,allowframebreaks]
@@ -88,7 +90,7 @@
 \insertBib
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{document}

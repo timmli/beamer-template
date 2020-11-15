@@ -7,6 +7,8 @@
 # #+BEAMER_HEADER: \date[]{}
 # #+BEAMER_HEADER: \institute[]{}
 # #+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm]{path/to/picture}}	% on title slide
+#+BEAMER_HEADER: \RequirePackage{lipsum}
+#+BEAMER_HEADER: \titlegraphic{{\rmfamily \lipsum}}
 #+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ':t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+STARTUP: beamer
