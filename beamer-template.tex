@@ -1,17 +1,17 @@
 % -*- coding: utf-8 -*-
 
 \documentclass[
-10pt, % 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
-% serif,
-% table, % for table coloring
-% draft,
-% ngerman,
-% handout,	% remove overlays
-compress,
-xcolor=table,
-dvipsnames,
-aspectratio=43,
-]{beamer}
+  10pt, % 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+  % serif,
+  % table, % for table coloring
+  % draft,
+  % ngerman,
+  % handout,	% remove overlays
+  compress,
+  xcolor=table,
+  dvipsnames,
+  aspectratio=43,
+  ]{beamer}
 
 \input{beamer-template/beamer-settings.tex}
 
@@ -26,7 +26,7 @@ aspectratio=43,
 % \input{beamerlogosDuesseldorf.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%% 
-%    CUSTOM MACROS     %
+% CUSTOM MACROS     %
 %%%%%%%%%%%%%%%%%%%%%%%% 
 
 \input{beamer-template/myMacros}
@@ -38,48 +38,48 @@ aspectratio=43,
 \newcommand{\term}[1]{{\color{UTblue}\scshape\bfseries #1}} 
 \newcommand{\bspcolor}[1]{{\color{UTlightgreen}\bfseries #1}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % HEADER
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \title{Beamer Template}
 \subtitle{Subtitle}	
 \author{Max Mustermann}
 \institute[Inst.]{Institute/Affiliation}
 \date{\today}
-%\logo{\pgfimage[width=2cm,height=1cm]{logo-emmy}}			% Logo on all slides (pdf,png,jpg,eps)
-%\titlegraphic{\includegraphics[height=1cm]{path/to/picture}}	% on title slide
+% \logo{\pgfimage[width=2cm,height=1cm]{logo-emmy}}			% Logo on all slides (pdf,png,jpg,eps)
+% \titlegraphic{\includegraphics[height=1cm]{path/to/picture}}	% on title slide
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % SLIDES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{document}
 
 \maketitle
 
 % \begin{frame}[plain]
-%   \titlepage
+% \titlepage
 % \end{frame}
 
-%\frame{\titlepage}
+% \frame{\titlepage}
 
-%\frame{
-%\frametitle{Table of contents}
-%  \tableofcontents
-%  [pausesections]
-%}
+% \frame{
+% \frametitle{Table of contents}
+% \tableofcontents
+% [pausesections]
+% }
 
-%\AtBeginSection[]
-%{
-%  \begin{frame}{Outline}
-%    \tableofcontents[
-%    currentsection
-%    ]
-%  \end{frame}
-%}
+%   \AtBeginSection[]
+%   {
+%   \begin{frame}{Outline}
+%   \tableofcontents[
+%   currentsection
+%   ]
+%   \end{frame}
+% }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 \input{beamer-template/beamer-examples.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}[plain,allowframebreaks]
@@ -88,7 +88,7 @@ aspectratio=43,
 \insertBib
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
 \end{document}
