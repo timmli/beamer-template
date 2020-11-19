@@ -22,6 +22,7 @@
 #+LATEX_HEADER: \input{beamerlogosTuebingen}
 #+LANGUAGE:  en
 # #+LATEX_HEADER: \AtBeginDocument{\selectlanguage{german}}
+#+LATEX_HEADER: \addbibresource[datatype=bibtex]{references.bib}  % BibLaTeX
 #+COLUMNS: %40ITEM %10TAGS %9BEAMER_act(Overlays) %4BEAMER_col(Col) %20BEAMER_opt(Options)
 :end:
 
