@@ -22,7 +22,7 @@
 #+LATEX_HEADER: \input{beamerlogosTuebingen}
 #+LANGUAGE:  en
 # #+LATEX_HEADER: \AtBeginDocument{\selectlanguage{german}}
-#+LATEX_HEADER: \addbibresource[datatype=bibtex]{references.bib}  % BibLaTeX
+# Just mention the link to the references file [[addbibresource:references.bib]] in order to make it available to org-ref but not override the default bibliography which is helpful when looking for references which are not yet included in the local bibliography. 
 #+COLUMNS: %40ITEM %10TAGS %9BEAMER_act(Overlays) %4BEAMER_col(Col) %20BEAMER_opt(Options)
 :end:
 
