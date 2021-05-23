@@ -42,7 +42,7 @@
 %   TIKZ SETTINGS    % 
 %%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{tikz,tikz-qtree}
+\usepackage{tikz}
 \usepackage{tikz-dependency}
 
 \tikzset{every tree node/.style={align=center,anchor=north}}	% to allow linebreaks
@@ -241,8 +241,8 @@
     for tree={%
       /tikz/alert={#1},
       edge={/tikz/alert={#1}}}},
-  % only/.code args={<#1>}{% https://tex.stackexchange.com/a/417110/61499
-  %   \alt<#1>{}{\pgfkeysalso{before typesetting nodes={remove}}}},
+  only/.code args={<#1>}{% https://tex.stackexchange.com/a/417110/61499
+    \alt<#1>{}{\pgfkeysalso{before typesetting nodes={remove}}}},
   unify children/.style={
     if nodewalk valid={1}{
       l sep=5pt,
