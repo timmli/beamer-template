@@ -42,7 +42,7 @@
 %   TIKZ SETTINGS    % 
 %%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{tikz}
+\usepackage{tikz,tikz-qtree}
 \usepackage{tikz-dependency}
 
 \tikzset{every tree node/.style={align=center,anchor=north}}	% to allow linebreaks
@@ -241,8 +241,8 @@
     for tree={%
       /tikz/alert={#1},
       edge={/tikz/alert={#1}}}},
-  only/.code args={<#1>}{% https://tex.stackexchange.com/a/417110/61499
-    \alt<#1>{}{\pgfkeysalso{before typesetting nodes={remove}}}},
+  % only/.code args={<#1>}{% https://tex.stackexchange.com/a/417110/61499
+  %   \alt<#1>{}{\pgfkeysalso{before typesetting nodes={remove}}}},
   unify children/.style={
     if nodewalk valid={1}{
       l sep=5pt,
@@ -273,28 +273,28 @@
   % \setlength{\Extopsep}{1ex}   % vertical margin in linguex examples
 }
 
-\usepackage{beamer-template/packages/avm}
 %%%%%%%%%%%%%%%%%%%%%%
 %   AVM SETTINGS     % 
 %%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{beamer-template/packages/avm}
 
-\avmoptions{center,topright}  % topright determines the position of \osort
-\avmfont{\scshape}
-\avmvalfont{\normalfont}
-\avmsortfont{\normalfont\itshape}
+% \avmoptions{center,topright}  % topright determines the position of \osort
+% \avmfont{\scshape}
+% \avmvalfont{\normalfont}
+% \avmsortfont{\normalfont\itshape}
 
-\newenvironment{topbot}{   	% more flexible than /newcommand ?
-	\avmvskip{0.2ex} 
-	\hspace{-1.5em}
-	\begin{avm}
-	\avml
-	}
-	%%%
-	{
-	\avmr
-    \end{avm}
-    \hspace{-0.5em}
-}
+% \newenvironment{topbot}{   	% more flexible than /newcommand ?
+% 	\avmvskip{0.2ex} 
+% 	\hspace{-1.5em}
+% 	\begin{avm}
+% 	\avml
+% 	}
+% 	%%%
+% 	{
+% 	\avmr
+%     \end{avm}
+%     \hspace{-0.5em}
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%% 
 % LISTINGS SETTINGS  % 
