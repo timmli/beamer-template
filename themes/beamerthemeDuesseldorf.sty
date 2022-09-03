@@ -43,7 +43,10 @@
 \setbeamercolor*{bibliography entry location}{fg=black}
 \setbeamercolor*{bibliography entry note}{fg=black}
 % and kill the abominable icon
-\setbeamertemplate{bibliography item}{\insertbiblabel}  % insert label from bib(la)tex
+
+\setbeamertemplate{bibliography item}{[\printfield{labelnumber}]}  % insert label from bib(la)tex 
+% \setbeamertemplate{bibliography item}{\insertbiblabel}  % insert label from bib(la)tex (Does not work when using authoryear.)
+
 \AtBeginDocument{
   \renewcommand*{\bibfont}{\scriptsize}
 }
