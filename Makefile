@@ -4,7 +4,8 @@ BEAMER_FILES =  myMacros.tex \
 	beamer-settings.tex \
 	$(wildcard packages/*.sty) \
 	beamer-examples.tex \
-	$(wildcard bst/biblatex-sp-unified/[^.]*) \
+  muss.bbx \
+  muss.cbx \
 	$(wildcard graphics/*.pdf) 
 
 test_beamer:
